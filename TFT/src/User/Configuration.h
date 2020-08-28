@@ -75,7 +75,7 @@
  *
  * Options: [2400: 0, 9600: 1, 19200: 2, 38400: 3, 57600: 4, 115200: 5, 250000: 6, 500000: 7, 1000000: 8]
  */
-#define BAUDRATE 5  // Default: 5
+#define BAUDRATE 6  // Default: 5
 
 /**
  * Default Primary Language (for Touch-Mode only)
@@ -137,10 +137,10 @@
 #define MARLIN_FNCOLOR 0  // Default: 0
 
 // Text displayed at the top of the TFT in Marlin Mode
-#define MARLIN_BANNER_TEXT "Marlin Mode"  // Default: "Marlin Mode"
+#define MARLIN_BANNER_TEXT "JustIN"  // Default: "Marlin Mode"
 
 // Show banner text at the top of the TFT in Marlin Mode
-#define MARLIN_SHOW_BANNER true  // To enabled: true | To disabled: false (Default: true)
+#define MARLIN_SHOW_BANNER false  // To enabled: true | To disabled: false (Default: true)
 
 /**
  * Run Marlin Mode in Fullscreen
@@ -148,7 +148,7 @@
  * Options: 0: Disabled (RECOMMENDED FOR TFT24)
  *          1: Enabled
  */
-#define MARLIN_MODE_FULLSCREEN 0  // Default: 0
+#define MARLIN_MODE_FULLSCREEN 1  // Default: 0
 
 /**
  * Keep Serial always On (ONLY SUPPORTED ON TFT24 V1.1, TFT35 V3.0, AND TFT28 V3.0)
@@ -183,8 +183,8 @@
                            // cooling if marlin supports ontroller fan (M710).
 
 #define PREHEAT_LABELS {"PLA", "PETG", "ABS", "WOOD", "TPU", "NYLON"}
-#define PREHEAT_HOTEND {200,   240,    230,   170,    220,   250}
-#define PREHEAT_BED    { 60,    70,     90,    50,     50,    90}
+#define PREHEAT_HOTEND {200,   220,    240,   170,    220,   250}
+#define PREHEAT_BED    {60,     80,    100,    50,     50,    90}
 
 #define HEAT_MAX_TEMP   {275,       275,       275,       275,       275,       275,       150,    60}
 #define HEAT_SIGN_ID    {"T0:",     "T1:",     "T2:",     "T3:",     "T4:",     "T5:",     "B:",   "C:"}
@@ -234,9 +234,9 @@
 #define X_MIN_POS   0
 #define Y_MIN_POS   0
 #define Z_MIN_POS   0
-#define X_MAX_POS 235
-#define Y_MAX_POS 235
-#define Z_MAX_POS 250
+#define X_MAX_POS 220
+#define Y_MAX_POS 220
+#define Z_MAX_POS 195
 
 /**
  * Raised Z height for probing
@@ -617,7 +617,7 @@
 
 // Smart filament runout detection
 // For use with an encoder disc that toggles runout pin as filament moves.
-#define FILAMENT_RUNOUT_DISTANCE_MM 7
+#define FILAMENT_RUNOUT_DISTANCE_MM 2
 
 //
 // Power Loss Recovery
